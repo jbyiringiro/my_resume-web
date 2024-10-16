@@ -1,0 +1,364 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Header Section */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  nav ul li a:hover {
+    color: #ddd;
+  }
+  
+  /* About Section */
+  #about {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  #about h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  #about p {
+    max-width: 700px;
+    margin: 20px auto;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .profile-pic {
+    margin-top: 20px;
+    width: 150px;
+    border-radius: 50%;
+    border: 4px solid #333;
+  }
+  
+  /* Skills Section */
+  #skills {
+    padding: 50px 20px;
+    background-color: #eaeaea;
+    text-align: center;
+  }
+  
+  #skills h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  #skills ul {
+    list-style-type: none;
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 1.1rem;
+    text-align: left;
+    padding-left: 0;
+  }
+  
+  #skills ul li {
+    margin: 10px 0;
+  }
+  
+  /* Experience Section */
+  #experience {
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  #experience h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  #experience article {
+    margin-bottom: 30px;
+  }
+  
+  #experience h3 {
+    font-size: 1.5rem;
+    color: #444;
+  }
+  
+  #experience p {
+    color: #666;
+  }
+  
+  /* Projects Section */
+  #projects {
+    padding: 50px 20px;
+    background-color: #eaeaea;
+  }
+  
+  #projects h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  #projects article {
+    margin-bottom: 30px;
+  }
+  
+  #projects h3 {
+    font-size: 1.5rem;
+    color: #444;
+  }
+  
+  #projects p {
+    color: #666;
+  }
+  
+  #projects img {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px 0;
+  }
+  
+  #projects video {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  #projects a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  #projects a:hover {
+    background-color: #555;
+  }
+  
+  /* Contact Section */
+  #contact {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  #contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  #contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #contact-form button:hover {
+    background-color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }
+  
+  /* MEDIA QUERIES */
+  @media (max-width: 768px) {
+    /* Stack navigation items vertically */
+    #navbar {
+      flex-direction: column;
+    }
+  
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    /* Adjust heading sizes for smaller screens */
+    #about h1 {
+      font-size: 2rem;
+    }
+  
+    #skills h2, #experience h2, #projects h2, #contact h2 {
+      font-size: 1.8rem;
+    }
+  
+    /* Ensure profile picture and videos are smaller */
+    .profile-pic {
+      width: 120px;
+    }
+  
+    #projects img, #projects video {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Adjust padding and font sizes for mobile screens */
+    body {
+      font-size: 14px;
+    }
+  
+    header {
+      padding: 10px;
+    }
+  
+    #about h1 {
+      font-size: 1.8rem;
+    }
+  
+    nav ul li a {
+      font-size: 1rem;
+    }
+  
+    #projects h3, #experience h3 {
+      font-size: 1.3rem;
+    }
+  
+    /* Stack form elements vertically for small screens */
+    #contact-form input, #contact-form textarea, #contact-form button {
+      font-size: 14px;
+    }
+  }
+  
+
+  /* Hamburger Icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hamburger .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  .nav-links {
+    display: flex;
+  }
+  
+  @media (max-width: 768px) {
+    /* Hide navbar and show hamburger in mobile view */
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 10px 0;
+      text-align: center;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  
+    nav ul li {
+      margin: 15px 0;
+    }
+  
+    nav ul li a {
+      color: #fff;
+      font-size: 1.2rem;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    /* Profile pic smaller for mobile */
+    .profile-pic {
+      width: 120px;
+    }
+  }
+  
