@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+}
+body {
+    background: #eeeeee;
+    color: #000000;
+    padding-top: 80px;
+}
+h1{
+    font-size: 8vh;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #eeeeee;
+}
+
+nav{
+    padding: 20px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 80px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.6em;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background: #A81686;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.7s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/* Sections General Styles */
+section{
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.section-header {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.section-header h1 {
+    font-size: 2.5em;
+    color: #A81686; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Paragraph Gneral Style */
+p {
+    line-height: 1.6;
+    font-size: 1.2rem;
+    color: #484646;
+}
+
+/* General Container Style */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* About Section Style */
+.about .container{
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 80px;
+    flex-wrap: wrap-reverse;
+}
+.about p{
+    font-size: 1.5rem;
+}
+.text-container{
+    flex: 1;
+    padding: 30px 0 20px;
+    text-align: justify;
+}
+.text-container h1{
+    font-size: 3rem;
+    color: #A81686;
+}
+.text-container h2{
+    font-size: 2rem;
+    padding: 20px 0;
+    color: #A81686;
+}
+.image-container {
+    flex-basis: 50%;
+    text-align: center;
+}
+.image-container img{
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Education Section Style */
+.education {
+    /* background-color: #f4f4f4;  */
+    padding: 20px;
+}
+
+.education .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.education-content {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.education-item {
+    background-color: #fff;
+    padding: 25px; 
+    margin: 50px; 
+    border-radius: 10px;
+    flex: 1;
+    /* min-width: 300px;
+    max-width: 400px; */
+    box-shadow: 0 1px 10px rgba(27, 25, 25, 0.3);
+    text-align: center; 
+}
+
+.education-item h2 {
+    font-size: 1.75em; 
+    color: #16A87A; 
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    font-size: 1.1em; 
+    color: #555; 
+    line-height: 1.6; 
+    margin: 5px 0; 
+}
+
+.education-item strong {
+    color: #333; 
+}
+
+.education-item em {
+    color: #777; 
+}
+
+.education-item h2 {
+    text-align: left; 
+    position: relative;
+}
+
+.education-item h2::after {
+    content: '';
+    display: block;
+    width: 50px; 
+    height: 3px; 
+    background-color: #16A87A;
+    margin-top: 5px;
+    margin-left: 0;
+    position: absolute;
+    bottom: -10px;
+}
+
+/* Experience Styles */
+
+/* SKills & Language Styles */
+.skills-languages .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.section-header {
+    margin-bottom: 20px;
+}
+
+.skills-list, .languages-list {
+    list-style-type: none;
+    padding: 10px; 
+}
+
+.skills-list li, .languages-list li {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.level {
+    font-weight: bold; 
+    color: #16A87A;
+}
+
+/* Footer Styles */
+.footer-content {
+    text-align: center;
+    padding: 15px;
+    background-color: #ffffff;
+    color: #333;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .section-header h1 {
+        font-size: 1.5em;
+    }
+}

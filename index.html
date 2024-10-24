@@ -1,123 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Josue BYIRINGIRO - Resume</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <title>Resume - Josue Byiringiro</title>
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <a href="#">
+                <img src="images/logo.png" alt="Josue-logo" class="logo">
+            </a>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills-languages">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contacts">Let Connect</a></li>
+            </ul>
+        </nav>    
+    </header>
 
-  <!-- Header Section -->
-  <header>
-    <nav id="navbar">
-      <img src="images/logo.png" alt="Josue Byiringiro Logo" class="logo">
-      <ul id="nav-links" class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <!-- Hamburger Icon -->
-      <button class="hamburger" aria-label="Toggle Menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-    </nav>
-  </header>
+    <main>
+        <!-- -----------About Me-------------- -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="text-container">
+                <h1>Hello,</h1>
+                <h2>I'm <span>Josue Byiringiro</span></h2>
+                <p>
+                    A motivated university student pursuing a degree in Software Engineering, 
+                    with a strong background in Mathematics, Physics, and Computer Science. 
+                    Passionate about leveraging technology to address community challenges 
+                    and enhance problem-solving capabilities. Skilled in digital fabrication, 
+                    with hands-on experience in creating innovative solutions. 
+                    Eager to apply technical expertise and creativity to real-world projects.
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="images/profile.jpg" alt="Profile photo">
+            </div>
+        </div>
+    </section>
+    <!-- ---------End of About Me------------ -->
 
-  <!-- About Section -->
-  <section id="about">
-    <h1>Josue BYIRINGIRO</h1>
-    <p>I'm a passionate full-stack developer with expertise in building web and mobile applications. With over 5 years of experience, I specialize in creating intuitive and user-friendly designs.</p>
-    <img src="images/profile-pic.jpg" alt="Josue Byiringiro" class="profile-pic">
-  </section>
+    <!-- -----------Education-------------- -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h1>Education</h1>
+            </div>
+            <div class="education-content">
+                <div class="education-item">
+                    <h2>College Education</h2>
+                    <p><strong>Bachelor of Software Engineering</strong></p>
+                    <p><em>African Leadership university, 2024 - Present</em></p>
+                    <p></p>
+                </div>
+                <div class="education-item">
+                    <h2>High School Education</h2>
+                    <p><strong>High School Diploma</strong></p>
+                    <p><em>Liquidnet Family High School, 2018 - 2022</em></p>
+                    <p>Combination: Mathematics, Physics, Computer Science</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------End of Education------------ -->
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML5 / CSS3</li>
-      <li>JavaScript (ES6+)</li>
-      <li>React & Redux</li>
-      <li>Node.js & Express</li>
-      <li>Python / Django</li>
-      <li>SQL / NoSQL Databases</li>
-      <li>RESTful APIs</li>
-    </ul>
-  </section>
+    <!-- -----------Experience-------------- -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h1>Experience</h1>
+            </div>
+            <div >
+                <p>
+                    Motivated university student pursuing a degree in Software Engineering, 
+                    with a strong background in Mathematics, Physics, and Computer Science. 
+                    Passionate about leveraging technology to address community challenges 
+                    and enhance problem-solving capabilities. Skilled in digital fabrication, 
+                    with hands-on experience in creating innovative solutions. 
+                    Eager to apply technical expertise and creativity to real-world projects.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- ---------End of Experience------------ -->
+    <!-- ---------Skills  and Languages------------ -->
+    <section id="skills-languages" class="skills-languages">
+        <div class="container">
+            <div class="skills-container">
+                <div class="section-header">
+                    <h1>Skills</h1>
+                </div>
+                <ul class="skills-list">
+                    <li>Programming</li>
+                    <li>Graphic Design</li>
+                    <li>3D Drawing</li>
+                    <li>Photography</li>
+                    <li>Microsoft suite</li>
+                    <li>Digital Fabrication</li>
+                </ul>
+                <!-- <div >
+                    <ul class="skills-list">
+                        <li>Programming</li>
+                        <li>Graphic Design</li>
+                        <li>3D Drawing</li>
+                        <li>Photography</li>
+                        <li>Microsoft suite</li>
+                        <li>Digital Fabrication</li>
+                    </ul>
+                </div> -->
+            </div>
+            <div class="languages-container">
+                <div class="section-header">
+                    <h1>Languages</h1>
+                </div>
+                <ul class="languages-list">
+                    <li>English - <span class="level">Fluent</span></li>
+                    <li>Kinyarwanda - <span class="level">Native</span></li>
+                    <li>Swahili - <span class="level">Intermediate</span></li>
+                </ul>
+                <!-- <div>
+                    <ul class="languages-list">
+                        <li>English - <span class="level">Fluent</span></li>
+                        <li>Kinyarwanda - <span class="level">Native</span></li>
+                        <li>Swahili - <span class="level">Intermediate</span></li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- ---------End of Skills and Language------------ -->
 
-  <!-- Experience Section -->
-  <section id="experience">
-    <h2>Work Experience</h2>
-    
-    <article>
-      <h3>Lead Developer at ABC Tech</h3>
-      <p><strong>Duration:</strong> January 2021 - Present</p>
-      <p><strong>Responsibilities:</strong> Led a team of 5 developers to build a SaaS platform used by over 10,000 businesses. Optimized backend services to handle high traffic efficiently.</p>
-    </article>
-
-    <article>
-      <h3>Software Engineer at XYZ Corp</h3>
-      <p><strong>Duration:</strong> May 2018 - December 2020</p>
-      <p><strong>Responsibilities:</strong> Developed and maintained web applications using React and Node.js. Implemented automated testing, reducing bugs by 30%.</p>
-    </article>
-    
-    <article>
-      <h3>Junior Developer at WebWorks</h3>
-      <p><strong>Duration:</strong> June 2016 - April 2018</p>
-      <p><strong>Responsibilities:</strong> Assisted in designing and coding responsive websites. Built interactive elements with JavaScript to enhance user experience.</p>
-    </article>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    
-    <article>
-      <h3>E-Commerce Website</h3>
-      <p><strong>Technologies:</strong> React, Node.js, MongoDB</p>
-      <p>Developed a fully functional e-commerce site with dynamic product listings, shopping cart, and payment integration.</p>
-      <img src="images/project1.png" alt="E-Commerce Project">
-      <video controls>
-        <source src="videos/ecommerce-demo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <p><em>Video Directed by: Jane Smith</em></p>
-      <a href="https://github.com/johndoe/ecommerce">View Project</a>
-    </article>
-
-    <article>
-      <h3>Weather App</h3>
-      <p><strong>Technologies:</strong> JavaScript, HTML5, CSS3</p>
-      <p>A weather forecasting web application that displays real-time weather data for any location using a weather API.</p>
-      <img src="images/project2.png" alt="Weather App Project">
-      <a href="https://github.com/johndoe/weather-app">View Project</a>
-    </article>
-    
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <form id="contact-form">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2024 Josue.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <div class="section-header">
+                <h1>Contacts</h1>
+                <h2><em>Connect with Me</em></h2>
+            </div>
+            <p>
+                <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/byiringirojosue/" target="_blank">LinkedIn</a> | 
+                <i class="fab fa-github"></i> <a href="https://github.com/jbyiringiro" target="_blank">GitHub</a>
+            </p>
+            <p>Email: <a href="mailto:byrngrjosue@gmail.com">byrngrjosue@gmail.com</a></p>
+        </div>
+    </section>
+    <!-- ---------End of Contacts Section------------ -->
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>Josue Byiringiro 2024. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
