@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', 'sans-serif';
+  font-family: 'Cambria', 'sans-serif';
   box-sizing: border-box;
 }
 body {
@@ -40,7 +40,7 @@ nav ul li{
 nav ul li a{
   color: #000000;
   text-decoration: none;
-  font-size: 1.6em;
+  font-size: 1.2em;
   position: relative;
 }
 
@@ -95,7 +95,7 @@ p {
 /* About Section Style */
 .about .container{
   display: flex;
-  align-content: space-around;
+  align-content: space-between;
   align-items: center;
   width: 100%;
   padding: 80px;
@@ -119,7 +119,8 @@ p {
   color: #A81686;
 }
 .image-container {
-  flex-basis: 50%;
+  flex: 1;
+  /* flex-basis: 50%; */
   text-align: center;
 }
 .image-container img{
@@ -130,7 +131,7 @@ p {
 
 /* Education Section Style */
 .education {
-  /* background-color: #f4f4f4;  */
+  /* background-color: #f4f4f4; */
   padding: 20px;
 }
 
@@ -197,6 +198,33 @@ p {
 }
 
 /* Experience Styles */
+.experience-item {
+  /* background-color: #fff; */
+  padding: 15px;
+  border-radius: 5px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  margin-bottom: 15px;
+}
+
+.experience-item h2 {
+  font-size: 1.5em;
+  color: #16A87A;
+}
+
+.experience-item em {
+  font-style: italic;
+  color: #555;
+}
+
+.experience-item ul {
+  list-style-type: none; 
+  margin-left: 25px;
+}
+
+.experience-item li {
+  margin-bottom: 5px; 
+  line-height: 1.6;
+}
 
 /* SKills & Language Styles */
 .skills-languages .container {
@@ -225,12 +253,62 @@ p {
   color: #16A87A;
 }
 
+/* Contact Section Styles */
+.contacts {
+  background-color: #333;
+  color: white;
+}
+
+.contacts .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  flex-wrap: wrap;
+}
+
+.contacts .section-header h3 em{
+  font-size: 1rem;
+  margin: 0;
+}
+
+.contacts	.section-header span::after {
+  content: '';
+  display: block;
+  width: 70px; 
+  height: 4px; 
+  background-color: #16A87A;
+  margin-top: 2px;
+  margin-left: 0;
+  position: relative;
+  bottom: -10px;
+}
+.contacts-item p {
+  margin: 5px 0;
+}
+
+.contacts-item a {
+  color: #16A87A;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.contacts-item a:hover {
+  color: #fff;
+  transform: .5s;
+}
+
+.contacts-item span {
+  color: white;
+  font-size: 24px;
+}
+
 /* Footer Styles */
 .footer-content {
   text-align: center;
-  padding: 15px;
-  background-color: #ffffff;
-  color: #333;
+  padding: 5px;
+  background-color: #333;
   position: relative;
   bottom: 0;
   width: 100%;
